@@ -108,9 +108,9 @@ body {
   
   @font-face {
     font-family: 'Satoshi-Bold';
-    src: url('/dr.mamun/clientmamun//fonts/Satoshi-Bold.woff2') format('woff2'),
-         url('/dr.mamun/clientmamun//fonts/Satoshi-Bold.woff') format('woff'),
-         url('/dr.mamun/clientmamun//fonts/Satoshi-Bold.ttf') format('truetype');
+    src: url('/dr.mamun/clientmamun/fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('/dr.mamun/clientmamun/fonts/Satoshi-Bold.woff') format('woff'),
+         url('/dr.mamun/clientmamun/fonts/Satoshi-Bold.ttf') format('truetype');
          font-weight: 700;
          font-display: swap;
          font-style: normal;
