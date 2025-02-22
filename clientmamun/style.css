@@ -173,7 +173,8 @@ body {
 }
 
 .headinfo div:nth-child(2) {
-    border: .5px solid #3a68a5;
+    border-left: .5px solid #3a68a5;
+    border-right: .5px solid #3a68a5;
 }
 
 
@@ -203,10 +204,86 @@ body {
 }
 
 .contactandmenu .contactno {
-    margin: 0 20px;
+    padding: 20px;
     cursor: pointer;
 }
 .contactandmenu .threedot {
-    margin: 0 20px;
+    padding:  20px;
     cursor: pointer;
 }
+
+
+/* slider.start */
+
+.slider {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -400px;
+    width: 90vw;
+    max-width: 400px;
+    transition: right 0.4s ease-in-out;
+}
+
+.darkscreen {
+    position: fixed;
+    background-color: #000000c7;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    transition: right 0.4s ease-in-out;
+}
+
+.sliderholder {
+    /* margin: 20px 0 0 0; */
+    text-transform: capitalize;
+    font-family: 'Satoshi-Bold', sans-serif;
+    letter-spacing: 1px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    height: 60%;
+}
+
+.sliderholder div {
+    padding: 20px 0 20px 29px;
+    color: #03306b;
+    border-bottom: 0.5px solid #3a68a52d;
+    cursor: pointer;
+}
+
+.sliderholder div:hover {
+    padding: 20px 0 20px 29px;
+    color: #ffffff;
+    background-color: #8c9676d0;
+    border-bottom: 0.5px solid #3a68a52d;
+}
+
+.slidercross {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    border-bottom: 0.5px solid  #83abe051;
+    padding: 0 0 15px 0;
+}
+
+.slidercross .logoslider {
+    margin: 8px 0 0 10px;
+}
+
+.slidercross .crosssvg svg{
+    padding: 16px;
+    cursor: pointer;
+    stroke:#034090; 
+    /* background-color: #03306b; */
+    margin: 0 5px 0 0;
+}
+
+.slidercross .crosssvg svg:hover {
+    padding: 16px;
+    cursor: pointer;
+    stroke: #ffffff;
+    background-color: #8c9676d0;
+}
+/* slider.end */
