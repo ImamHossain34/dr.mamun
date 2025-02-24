@@ -224,6 +224,7 @@ body {
     width: 90vw;
     max-width: 400px;
     transition: right 0.4s ease-in-out;
+    z-index: 40;
 }
 
 .darkscreen {
@@ -234,6 +235,7 @@ body {
     width: 100%;
     display: none;
     transition: right 0.4s ease-in-out;
+    z-index: 20;
 }
 
 .sliderholder {
@@ -248,7 +250,7 @@ body {
 
 .sliderholder div {
     padding: 20px 0 20px 29px;
-    color: #03306b;
+    color: #03306bd4;
     border-bottom: 0.5px solid #3a68a52d;
     cursor: pointer;
 }
@@ -310,7 +312,7 @@ body {
 }
 
 
-/*  */
+/*  form popup editing */
 
 /* body {
     font-family: 'Arial', sans-serif;
@@ -391,7 +393,7 @@ body {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 14px;
     margin: 0;
     font-weight: bold;
     color: #333;
@@ -441,5 +443,173 @@ textarea.form-input {
     background: #ffe6e6;
 }
 
+.crosssvgform svg{
+    width: 20px;
+    /* z-index: ; */
+    stroke: #0000006a;
+    /* background-color: #0056b3; */
+    position: relative;
+    right: -145px;
+    top: -10px;
+    cursor: pointer;
+}
 
-/*  */
+
+/* form popup editing end */
+
+.slideshowcontainer {
+    width: 100%;
+    background-color: yellow;
+    position: relative; /* Ensures absolute positioning inside */
+}
+
+.slideshowcontainer .imgslidecont {
+    position: relative; /* Needed for absolute positioning of child elements */
+    width: 100%;
+    height: 100%; /* Adjust as needed */
+}
+
+.slideshowcontainer .imgslidecont img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Smooth fade effect */
+    filter: brightness(60%);
+    /* filter: blur(0.6px) brightness(60%); */
+
+}
+
+
+.thaicarediagotext {
+    margin: 10px 0 0 14px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.thaicarediagotext2 {
+    margin: 0 0 0 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.thaicarediagotext3 {
+    margin: 5px 0 0 14px;
+    font-size: 14px;
+    font-weight: 300;
+    /* width: 70%; */
+    line-height: 13px;
+}
+
+.textoverimage {
+    z-index: 8;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 0;
+    width: 100%;
+    font-family: "Titillium Web", serif;
+}
+
+
+
+
+
+.doctor-list {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #3a68a52d;
+    transition: max-height 0.2s ease-out;
+}
+
+.doctor-list li {
+    /* background: #f1f1f1; */
+    padding: 10px 0;
+    color: #03306bd4;
+    font-size: 14px;
+    margin: 0 0 0 50px;
+    border-bottom: 1px solid #3a68a52d;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.doctor-list li:active {
+    color: #8c9676d0;
+}
+
+
+.doctor-list1 {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #3a68a52d;
+    transition: max-height 0.2s ease-out;
+}
+
+.doctor-list1 li {
+    /* background: #f1f1f1; */
+    padding: 10px 0;
+    color: #03306bd4;
+    font-size: 14px;
+    margin: 0 0 0 50px;
+    border-bottom: 1px solid #3a68a52d;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.doctor-list1 li:active {
+    color: #8c9676d0;
+}
+
+
+.doctor-list2 {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #3a68a52d;
+    transition: max-height 0.2s ease-out;
+}
+
+.doctor-list2 li {
+    /* background: #f1f1f1; */
+    padding: 10px 0;
+    color: #03306bd4;
+    font-size: 14px;
+    margin: 0 0 0 50px;
+    border-bottom: 1px solid #3a68a52d;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.doctor-list2 li:active {
+    color: #8c9676d0;
+
+
+}
+.doctor-list3 {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #3a68a52d;
+    transition: max-height 0.2s ease-out;
+}
+
+.doctor-list3 li {
+    /* background: #f1f1f1; */
+    padding: 10px 0;
+    color: #03306bd4;
+    font-size: 14px;
+    margin: 0 0 0 50px;
+    border-bottom: 1px solid #3a68a52d;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.doctor-list3 li:active {
+    color: #8c9676d0;
+}
