@@ -123,6 +123,10 @@ function customerService() {
       }
     });
   
+    document.querySelector('.crosssvgform svg').addEventListener('click', () => {
+        overlay.click();
+    });
+    
     // Close the form if clicking anywhere outside the form (on the overlay)
     overlay.addEventListener('click', () => {
       formContainer.classList.remove('show');
@@ -139,7 +143,79 @@ function customerService() {
       }, 300);
     });
   }
-  
+
   // Call the function to initialize the event listener
   customerService();
+
+  
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let images = document.querySelectorAll(".slideshowcontainer .imgslidecont img");
+    let currentIndex = 0;
+    let totalImages = images.length;
+
+    function fadeImages() {
+        // Set all images to opacity 0
+        images.forEach(img => img.style.opacity = "0");
+
+        // Make the current image visible
+        images[currentIndex].style.opacity = "1";
+
+        // Move to the next image
+        currentIndex = (currentIndex + 1) % totalImages;
+
+        // Repeat the function every 3 seconds
+        setTimeout(fadeImages, 3000);
+    }
+
+    // Start the fading effect
+    fadeImages();
+});
+
+
+
+
+
+
+
+
+
+
+document.querySelector(".slideraboutus").addEventListener("click", function() {
+    let doctorList = document.querySelector(".doctor-list");
+    if (doctorList.style.maxHeight) {
+        doctorList.style.maxHeight = null;
+    } else {
+        doctorList.style.maxHeight = doctorList.scrollHeight + "px";
+    }
+});
+document.querySelector(".sliderservices").addEventListener("click", function() {
+    let doctorList = document.querySelector(".doctor-list1");
+    if (doctorList.style.maxHeight) {
+        doctorList.style.maxHeight = null;
+    } else {
+        doctorList.style.maxHeight = doctorList.scrollHeight + "px";
+    }
+});
+document.querySelector(".sliderappointmenttime").addEventListener("click", function() {
+    let doctorList = document.querySelector(".doctor-list2");
+    if (doctorList.style.maxHeight) {
+        doctorList.style.maxHeight = null;
+    } else {
+        doctorList.style.maxHeight = doctorList.scrollHeight + "px";
+    }
+});
+document.querySelector(".administrators").addEventListener("click", function() {
+    let doctorList = document.querySelector(".doctor-list3");
+    if (doctorList.style.maxHeight) {
+        doctorList.style.maxHeight = null;
+    } else {
+        doctorList.style.maxHeight = doctorList.scrollHeight + "px";
+    }
+});
+
+
+  
   
